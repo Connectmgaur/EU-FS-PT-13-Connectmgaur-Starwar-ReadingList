@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faHeart as faHeartSolid,
-  faCircleInfo,
-} from "@fortawesome/free-solid-svg-icons";
+import { faHeart as faHeartSolid } from "@fortawesome/free-regular-svg-icons";
+import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 
 import { faHeart as faHeartOutline } from "@fortawesome/free-regular-svg-icons";
 
@@ -36,8 +34,9 @@ export const Home = () => {
               </div>
               <div className="d-flex justify-content-evenly mb-3">
                 <Link className="btn btn-primary" to={`/person/${person.uid}`}>
+                Learn More 
                   <FontAwesomeIcon icon={faCircleInfo} />
-                  
+                 
                 </Link>
                 <a
                   className="btn btn-warning"
@@ -94,6 +93,7 @@ export const Home = () => {
                     to={`/vehicle/${vehicle.uid}`}
                   >
                     <FontAwesomeIcon icon={faCircleInfo} />
+                    Learn More
                   </Link>
                 </p>
                 <p>
@@ -111,6 +111,7 @@ export const Home = () => {
                       <FontAwesomeIcon icon={faHeartSolid} />
                     ) : (
                       <FontAwesomeIcon icon={faHeartOutline} />
+                    
                     )}
                   </a>
                 </p>
@@ -153,7 +154,7 @@ export const Home = () => {
                     to={`/planet/${planet.uid}`}
                   >
                     <FontAwesomeIcon icon={faCircleInfo} />
-                    
+                    Learn More
                   </Link>
                 </p>
                 <p>

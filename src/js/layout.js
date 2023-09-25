@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-import { Home } from "./views/home";
+import  { Home } from "./views/home";
 import { Person } from "./views/person";
 import { Vehicle } from "./views/vehicle";
 import { Planet } from "./views/planet";
