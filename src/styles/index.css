@@ -1,3 +1,7 @@
 /* 
     General Styles
 */
+/* Add this CSS to your home.css file */
+.favorite {
+    color: green; /* Change the color to green or any desired color */
+  }

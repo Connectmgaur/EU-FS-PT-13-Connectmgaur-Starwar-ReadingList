@@ -46,6 +46,7 @@ const getState = ({ getStore, getActions, setStore }) => {
             uid: uid,
             value: object,
           });
+          
         }
 
         console.log(store.favorites);
