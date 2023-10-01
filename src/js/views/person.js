@@ -21,7 +21,7 @@ export const Person = (props) => {
 			<p className="col-3"> </p>
 			<div className="col-6">
 			  <p className="text">{person.description}</p>
-			  <p>Lorem Posem kcodkccmldkcpdkcdmcl mcodkcpd cmdm</p>
+			 
 			</div>
 		  </div>
 		</div>

@@ -57,9 +57,9 @@ export const Home = () => {
                   {store.favorites.some(
                     (fav) => fav.uid == person.uid && fav.type == "person"
                   ) ? (
-                    <FontAwesomeIcon icon={faHeartSolid} />
+                    <FontAwesomeIcon icon={faHeartSolid}  style={{ color: 'green' }}/>
                   ) : (
-                    <FontAwesomeIcon icon={faHeartOutline} />
+                    <FontAwesomeIcon icon={faHeartOutline}  />
                   )}
 
                 </a>

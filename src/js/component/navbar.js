@@ -23,7 +23,13 @@ export const Navbar = () => {
               data-bs-auto-close="outside"
               aria-expanded="false"
             >
+
+
+
               Favorites
+              {store.favorites.length > 0 && (
+                <span className="badge">{store.favorites.length}</span>
+              )}
             </button>
             <ul className="dropdown-menu dropdown-menu-end">
               {store.favorites.map((fav) => {
@@ -34,6 +40,7 @@ export const Navbar = () => {
                       className="dropdown-item d-flex justify-content-between"
                     >
                       <span>{fav.value.name}</span>
+                      <span>{fav.value.length}</span>
                       <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
                       <a
                         href="#"

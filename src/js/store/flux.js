@@ -32,6 +32,8 @@ const getState = ({ getStore, getActions, setStore }) => {
         );
         console.log(store.favorites);
 
+        
+
         const itemInFavorites = (fav) => fav.type === type && fav.uid === uid;
         if (store.favorites.some(itemInFavorites)) {
           console.log("exists, will be deleted");
@@ -121,9 +123,13 @@ const getState = ({ getStore, getActions, setStore }) => {
         }
 
         const personPromise = async () => {
-          const person = (
+          const personData= (
             await (await fetch(`${baseURL}/people/${uid}`)).json()
-          ).result.properties;
+          ).result;
+          const person={...personData.properties, description: personData.description}
+
+          
+
 
           let store = getStore();
           store.personCache.set(uid, person);
